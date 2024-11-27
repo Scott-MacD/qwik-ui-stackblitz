@@ -12,7 +12,7 @@ export default component$(() => {
     <>
       <h1>Triggers</h1>
       <div>{items.map((item, i) => (
-        <MyComponent label={item.label}>{item.content}</MyComponent>
+        <MyComponent key={i} label={item.label}>{item.content}</MyComponent>
       ))}</div>
 
       <h2>Add Item</h2>
